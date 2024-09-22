@@ -66,7 +66,20 @@ explorer_coins = [
     f
     for f in os.listdir(f"{repo_path}/explorers")
     if os.path.isfile(f"{repo_path}/explorers/{f}")
+    and f != "explorer_paths.json"
 ]
+
+# Sort and add trailing slash to explorer urls
+for i in explorer_coins:
+    with open(f"{repo_path}/explorers/{i}", "r") as f:
+        explorers = json.load(f)
+        for x in range(len(explorers)):
+            if not explorers[x].endswith("/"):
+                explorers[x] += "/"
+        explorers = list(set(explorers))
+        explorers.sort()
+        with open(f"{repo_path}/explorers/{i}", "w") as f:
+            json.dump(explorers, f, indent=4)
 
 binance_quote_tickers = [
     "BTC",
@@ -93,6 +106,7 @@ with open(f"{script_path}/electrum_scan_report.json", "r") as f:
 
 with open(f"{repo_path}/explorers/explorer_paths.json", "r") as f:
     explorer_paths = json.load(f)
+    PREFERRED_EXPLORERS = explorer_paths.keys()
 
 with open(f"{repo_path}/api_ids/forex_ids.json", "r") as f:
     forex_ids = json.load(f)
@@ -255,7 +269,9 @@ class CoinConfig:
             elif "platform" in protocol_data:
                 # TODO: ERC-like things
                 platform = protocol_data["platform"]
-                if self.is_testnet:
+                if self.coin_data["protocol"]["type"] in ["TENDERMINT", "TENDERMINTTOKEN"]:
+                    coin_type = "TENDERMINT"
+                elif self.is_testnet:
                     coin_type = self.testnet_protocols[platform]
                 else:
                     coin_type = self.protocols[platform]
@@ -379,14 +395,13 @@ class CoinConfig:
                 return f"t{token_type}"
             return token_type
 
-        if self.coin_type in ["TENDERMINTTOKEN", "TENDERMINT"]:
-            for i in ["IRISTEST", "NUCLEUSTEST"]:
-                if self.ticker.find(i) > -1:
-                    self.is_testnet = True
-                    return i
-            for i in ["IBC_IRIS", "IBC_ATOM", "IBC_OSMO"]:
-                if self.ticker.find(i) > -1:
-                    return i.replace("IBC_", "")
+        if self.coin_type in ["TENDERMINT"]:
+            if self.ticker in ["IRISTEST", "NUCLEUSTEST"]:
+                self.is_testnet = True
+            return self.ticker
+                
+        if self.coin_type in ["TENDERMINTTOKEN"]:
+            return self.ticker.split("-IBC_")[1]
 
         if self.coin_type not in ["UTXO", "ZHTLC", "BCH", "QTUM"]:
             if self.data[self.ticker]["is_testnet"]:
@@ -498,13 +513,22 @@ class CoinConfig:
                 explorers = json.load(f)
 
         if explorers:
-            for x in explorers:
-                for p in explorer_paths:
-                    if x.find(p) > -1:
-                        self.data[self.ticker].update(explorer_paths[p])
+            explorer = explorers[0]
+            for px in PREFERRED_EXPLORERS:
+                for x in explorers:    
+                    if px in x:
+                        explorer = x
                         break
+                if explorer != explorers[0]:
+                    break
+            
+            for xp in explorer_paths:
+                if x.find(xp) > -1:
+                    self.data[self.ticker].update(explorer_paths[xp])
+                    break
 
-            self.data[self.ticker].update({"explorer_url": explorers[0]})
+
+            self.data[self.ticker].update({"explorer_url": explorer})
             for i in [
                 ("explorer_tx_url", "tx/"),
                 ("explorer_address_url", "address/"),
@@ -714,6 +738,7 @@ def generate_binance_api_ids(coins_config):
                 api_ids.update({coin: ticker})
 
     with open(f"{repo_path}/api_ids/binance_ids.json", "w") as f:
+        api_ids = {k: v for k, v in sorted(api_ids.items(), key=lambda item: item[1])}
         json.dump(api_ids, f, indent=4)
 
     # To use for candlestick data, reference api_ids/binance_ids.json
