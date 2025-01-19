@@ -27164,6 +27164,22 @@
         "derivation_path": "m/44'/191'",
         "electrum": [
             {
+                "url": "electrum5.getlynx.io:50002",
+                "protocol": "SSL"
+            },
+            {
+                "url": "electrum5.getlynx.io:50004",
+                "protocol": "WSS"
+            },
+            {
+                "url": "electrum6.getlynx.io:50002",
+                "protocol": "SSL"
+            },
+            {
+                "url": "electrum6.getlynx.io:50004",
+                "protocol": "WSS"
+            },
+            {
                 "url": "electrum7.getlynx.io:50002",
                 "protocol": "SSL"
             },
