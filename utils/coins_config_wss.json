@@ -42754,15 +42754,6 @@
         },
         "electrum": [
             {
-                "url": "meowcoinelectrum.xyz:50004",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "Meowmancer#2099"
-                    }
-                ]
-            },
-            {
                 "url": "meowelectrum.xyz:50004",
                 "protocol": "WSS",
                 "contact": [
