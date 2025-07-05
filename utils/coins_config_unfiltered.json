@@ -27,10 +27,10 @@
         ],
         "explorer_block_url": "block/"
     },
-    "ZEN": {
-        "coin": "ZEN",
+    "SCZEN": {
+        "coin": "SCZEN",
         "type": "SIA",
-        "name": "Zen Testnet",
+        "name": "Siacoin Zen Testnet",
         "coinpaprika_id": "",
         "coingecko_id": "",
         "livecoinwatch_id": "",
@@ -39,15 +39,20 @@
         "explorer_address_url": "address/",
         "supported": [],
         "active": false,
-        "is_testnet": false,
+        "is_testnet": true,
         "currently_enabled": false,
         "wallet_only": false,
-        "fname": "Zen Testnet",
+        "fname": "Siacoin Zen Testnet",
         "mm2": 1,
         "required_confirmations": 1,
         "protocol": {
             "type": "SIA"
         },
+        "nodes": [
+            {
+                "url": "https://api.siascan.com/zen/wallet/api"
+            }
+        ],
         "explorer_block_url": "block/"
     },
     "1INCH-AVX20": {
@@ -5003,62 +5008,7 @@
             "github": "https://github.com/BitBlocksProject/BitBlocks",
             "homepage": "https://bitblocksproject.com"
         },
-        "electrum": [
-            {
-                "url": "bbk-ex-three.ewmci.online:50001",
-                "protocol": "TCP",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-three.ewmci.online:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-three.ewmci.online:50003",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-two.ewmci.online:50001",
-                "protocol": "TCP",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-two.ewmci.online:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-two.ewmci.online:50003",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            }
-        ],
+        "electrum": [],
         "explorer_block_url": "block.dws?"
     },
     "BBK-BEP20": {
@@ -7180,15 +7130,6 @@
                     }
                 ],
                 "protocol": "WSS"
-            },
-            {
-                "url": "electrum5.btcz.rocks:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "426842722436120577"
-                    }
-                ]
             }
         ],
         "explorer_block_url": "block/"

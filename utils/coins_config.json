@@ -27,6 +27,34 @@
         ],
         "explorer_block_url": "block/"
     },
+    "SCZEN": {
+        "coin": "SCZEN",
+        "type": "SIA",
+        "name": "Siacoin Zen Testnet",
+        "coinpaprika_id": "",
+        "coingecko_id": "",
+        "livecoinwatch_id": "",
+        "explorer_url": "https://zen.siascan.com/",
+        "explorer_tx_url": "tx/",
+        "explorer_address_url": "address/",
+        "supported": [],
+        "active": false,
+        "is_testnet": true,
+        "currently_enabled": false,
+        "wallet_only": false,
+        "fname": "Siacoin Zen Testnet",
+        "mm2": 1,
+        "required_confirmations": 1,
+        "protocol": {
+            "type": "SIA"
+        },
+        "nodes": [
+            {
+                "url": "https://api.siascan.com/zen/wallet/api"
+            }
+        ],
+        "explorer_block_url": "block/"
+    },
     "1INCH-AVX20": {
         "coin": "1INCH-AVX20",
         "type": "AVX-20",
@@ -4873,96 +4901,6 @@
         ],
         "explorer_block_url": "block/"
     },
-    "BBK": {
-        "coin": "BBK",
-        "type": "UTXO",
-        "name": "BitBlocks",
-        "coinpaprika_id": "bbk-bitblocks",
-        "coingecko_id": "",
-        "livecoinwatch_id": "BBK",
-        "explorer_url": "https://chainz.cryptoid.info/bbk/",
-        "explorer_tx_url": "tx.dws?",
-        "explorer_address_url": "address.dws?",
-        "supported": [],
-        "active": false,
-        "is_testnet": false,
-        "currently_enabled": false,
-        "wallet_only": true,
-        "sign_message_prefix": "DarkNet Signed Message:\n",
-        "fname": "BitBlocks",
-        "rpcport": 59768,
-        "pubtype": 25,
-        "p2shtype": 85,
-        "wiftype": 107,
-        "txfee": 10000,
-        "mm2": 1,
-        "required_confirmations": 5,
-        "avg_blocktime": 60,
-        "protocol": {
-            "type": "UTXO"
-        },
-        "links": {
-            "github": "https://github.com/BitBlocksProject/BitBlocks",
-            "homepage": "https://bitblocksproject.com"
-        },
-        "electrum": [
-            {
-                "url": "bbk-ex-three.ewmci.online:50001",
-                "protocol": "TCP",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-three.ewmci.online:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-three.ewmci.online:50003",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-two.ewmci.online:50001",
-                "protocol": "TCP",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-two.ewmci.online:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            },
-            {
-                "url": "bbk-ex-two.ewmci.online:50003",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "475820011634819072"
-                    }
-                ]
-            }
-        ],
-        "explorer_block_url": "block.dws?"
-    },
     "BBK-BEP20": {
         "coin": "BBK-BEP20",
         "type": "BEP-20",
@@ -7049,15 +6987,6 @@
                     }
                 ],
                 "protocol": "WSS"
-            },
-            {
-                "url": "electrum5.btcz.rocks:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "426842722436120577"
-                    }
-                ]
             }
         ],
         "explorer_block_url": "block/"
