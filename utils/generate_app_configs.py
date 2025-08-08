@@ -31,6 +31,7 @@ BINANCE_DELISTED_COINS = [
     "IRIS",
     "KMD",
     "LOOM",
+    "MATIC",
     "MC",
     "MDX",
     "MIR",
@@ -145,7 +146,7 @@ class CoinConfig:
             "GLMR": "Moonbeam",
             "HT": "HecoChain",
             "KCS": "KRC-20",
-            "MATIC": "Matic",
+            "POL": "Polygon",
             "MOVR": "Moonriver",
             "ONE": "HRC-20",
             "QTUM": "QRC-20",
@@ -163,7 +164,7 @@ class CoinConfig:
             "tQTUM": "QRC-20",
             "IRISTEST": "TENDERMINT",
             "NUCLEUSTEST": "TENDERMINT",
-            "MATICTEST": "Matic",
+            "POLTEST": "Polygon",
             "UBQ": "Ubiq",
         }
         self.coin_type = coin_data["protocol"]["type"]
