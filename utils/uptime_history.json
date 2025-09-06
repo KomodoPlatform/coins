@@ -286,13 +286,16 @@
         }
       },
       "electrum1.valhala.is:50001": {
-        "1755770395": "offline"
+        "1755770395": "offline",
+        "1757117575": "online"
       },
       "electrum1.valhala.is:50002": {
-        "1755770395": "offline"
+        "1755770395": "offline",
+        "1757117575": "online"
       },
       "electrum1.valhala.is:50004": {
-        "1755770395": "offline"
+        "1755770395": "offline",
+        "1757117575": "online"
       },
       "electrumx.aur.ewmcx.info:50002": {
         "1755770395": "online"
@@ -992,7 +995,8 @@
       },
       "electrum5.btcz.rocks:50002": {
         "1755770395": "offline",
-        "1756167205": "online"
+        "1756167205": "online",
+        "1757117575": "offline"
       },
       "electrum5.btcz.rocks:50004": {
         "1755770395": "offline"
@@ -1161,7 +1165,8 @@
     },
     "by_server": {
       "chicago.ecoincore.com:34333": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1757117575": "offline"
       },
       "holland.ecoincore.com:34333": {
         "1755770395": "offline"
@@ -1188,7 +1193,8 @@
         "1755770395": "offline"
       },
       "oakland.ecoincore.com:34333": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1757117575": "offline"
       },
       "seattle.ecoincore.com:34333": {
         "1755770395": "online"
@@ -1207,7 +1213,8 @@
     },
     "by_server": {
       "chicago.ecoincore.com:34333": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1757117575": "offline"
       },
       "holland.ecoincore.com:34333": {
         "1755770395": "offline"
@@ -1234,7 +1241,8 @@
         "1755770395": "offline"
       },
       "oakland.ecoincore.com:34333": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1757117575": "offline"
       },
       "seattle.ecoincore.com:34333": {
         "1755770395": "online"
@@ -1669,13 +1677,16 @@
         }
       },
       "electrumx1.dimecoinnetwork.com:50001": {
-        "1755770395": "offline"
+        "1755770395": "offline",
+        "1757117575": "online"
       },
       "electrumx1.dimecoinnetwork.com:50002": {
-        "1755770395": "offline"
+        "1755770395": "offline",
+        "1757117575": "online"
       },
       "electrumx1.dimecoinnetwork.com:50004": {
-        "1755770395": "offline"
+        "1755770395": "offline",
+        "1757117575": "online"
       },
       "electrumx2.dimecoinnetwork.com:50001": {
         "1755770395": "online"
@@ -4580,7 +4591,8 @@
     "by_server": {
       "https://1rpc.io/one": {
         "1755770395": "online",
-        "1756519454": "offline"
+        "1756519454": "offline",
+        "1757117575": "online"
       },
       "https://api.harmony.one": {
         "1755770395": "online"
