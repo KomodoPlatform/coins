@@ -2612,7 +2612,8 @@
     "all": {},
     "by_server": {
       "https://fantom-rpc.publicnode.com": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1759536782": "offline"
       },
       "https://fantom.drpc.org": {
         "1755770395": "online"
@@ -2621,7 +2622,8 @@
         "1755770395": "offline"
       },
       "wss://fantom-rpc.publicnode.com": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1759536782": "offline"
       },
       "wss://fantom.drpc.org": {
         "1755770395": "online"
@@ -5890,12 +5892,14 @@
       "uis-uno.ewmcx.net:50002": {
         "1755770395": "online",
         "1757307678": "offline",
-        "1757463228": "online"
+        "1757463228": "online",
+        "1759536782": "offline"
       },
       "uis-uno.ewmcx.net:50003": {
         "1755770395": "online",
         "1757307678": "offline",
-        "1757463228": "online"
+        "1757463228": "online",
+        "1759536782": "offline"
       }
     }
   },
@@ -5905,10 +5909,12 @@
     },
     "by_server": {
       "uno-bkp.coinmunity.gold:50002": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1759536782": "offline"
       },
       "uno-bkp.coinmunity.gold:50003": {
-        "1755770395": "online"
+        "1755770395": "online",
+        "1759536782": "offline"
       },
       "uno-ex-one.ewmci.online:50001": {
         "1755770395": "online"
