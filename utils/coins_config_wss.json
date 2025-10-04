@@ -13957,10 +13957,6 @@
         "fallback_swap_contract": "0x9130b257D37A52E52F21054c4DA3450c72f595CE",
         "nodes": [
             {
-                "url": "https://fantom-rpc.publicnode.com",
-                "ws_url": "wss://fantom-rpc.publicnode.com"
-            },
-            {
                 "url": "https://fantom.drpc.org",
                 "ws_url": "wss://fantom.drpc.org"
             }
@@ -33172,11 +33168,6 @@
                 "url": "failover.trc-uis.ewmcx.biz:50003",
                 "protocol": "WSS",
                 "disable_cert_verification": false
-            },
-            {
-                "url": "uis-uno.ewmcx.net:50003",
-                "protocol": "WSS",
-                "disable_cert_verification": false
             }
         ],
         "explorer_block_url": "block/"
@@ -33604,11 +33595,6 @@
             "homepage": "https://unobtanium.uno"
         },
         "electrum": [
-            {
-                "url": "uno-bkp.coinmunity.gold:50003",
-                "protocol": "WSS",
-                "disable_cert_verification": true
-            },
             {
                 "url": "uno-main.coinmunity.gold:50003",
                 "protocol": "WSS",
