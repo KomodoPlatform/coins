@@ -1677,6 +1677,7 @@
     "txfee": 1000,
     "segwit": false,
     "fork_id": "0x40",
+    "signature_version": "fork_id",
     "address_format": {
       "format": "cashaddress",
       "network": "bitcoincash"
@@ -8537,7 +8538,6 @@
     "p2shtype": 63,
     "wiftype": 128,
     "decimals": 8,
-    "signature_version": "base",
     "txfee": 10000,
     "segwit": true,
     "bech32_hrp": "frc",
@@ -14734,7 +14734,6 @@
     "dust": 100000,
     "mm2": 1,
     "segwit": true,
-    "signature_version": "witness_v0",
     "bech32_hrp": "ep",
     "address_format": {
       "format": "segwit"
@@ -14940,6 +14939,7 @@
     "txfee": 10,
     "segwit": false,
     "fork_id": "0x40",
+    "signature_version": "fork_id",
     "address_format": {
       "format": "cashaddress",
       "network": "ergon"
@@ -16349,6 +16349,7 @@
     "estimate_fee_blocks": 2,
     "segwit": false,
     "fork_id": "0x40",
+    "signature_version": "fork_id",
     "address_format": {
       "format": "cashaddress",
       "network": "bchtest"
@@ -16455,6 +16456,7 @@
     "estimate_fee_blocks": 2,
     "segwit": false,
     "fork_id": "0x40",
+    "signature_version": "fork_id",
     "address_format": {
       "format": "cashaddress",
       "network": "ecash"
@@ -16767,7 +16769,6 @@
     "p2shtype": 9,
     "wiftype": 244,
     "decimals": 8,
-    "signature_version": "base",
     "txfee": 10000,
     "segwit": true,
     "bech32_hrp": "maza",
@@ -16793,7 +16794,6 @@
     "p2shtype": 45,
     "wiftype": 176,
     "decimals": 8,
-    "signature_version": "base",
     "txfee": 10000,
     "segwit": true,
     "bech32_hrp": "crnc",
