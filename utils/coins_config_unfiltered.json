@@ -30432,6 +30432,10 @@
                 "ws_url": "wss://moonriver-rpc.publicnode.com"
             },
             {
+                "url": "https://moonriver.drpc.org",
+                "ws_url": "wss://moonriver.drpc.org"
+            },
+            {
                 "url": "https://rpc.api.moonriver.moonbeam.network",
                 "ws_url": "wss://wss.api.moonriver.moonbeam.network"
             }
@@ -32842,33 +32846,6 @@
             "homepage": "https://pepecoin.org"
         },
         "electrum": [
-            {
-                "url": "electrum.pepe.tips:50001",
-                "protocol": "TCP",
-                "contact": [
-                    {
-                        "discord": "squidicuz"
-                    }
-                ]
-            },
-            {
-                "url": "electrum.pepe.tips:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "squidicuz"
-                    }
-                ]
-            },
-            {
-                "url": "electrum.pepe.tips:50004",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "squidicuz"
-                    }
-                ]
-            },
             {
                 "url": "electrum.pepeblocks.com:50001",
                 "protocol": "TCP",
@@ -44958,33 +44935,6 @@
                 "protocol": "TCP"
             },
             {
-                "url": "electrumx-vtc.cryptoverted.com:55001",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ],
-                "protocol": "TCP"
-            },
-            {
-                "url": "electrumx-vtc.cryptoverted.com:55002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ]
-            },
-            {
-                "url": "electrumx-vtc.cryptoverted.com:55004",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ]
-            },
-            {
                 "url": "electrumx.javerity.com:5885",
                 "contact": [
                     {
@@ -45059,33 +45009,6 @@
             {
                 "url": "159.69.73.223:5028",
                 "protocol": "TCP"
-            },
-            {
-                "url": "electrumx-vtc.cryptoverted.com:55001",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ],
-                "protocol": "TCP"
-            },
-            {
-                "url": "electrumx-vtc.cryptoverted.com:55002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ]
-            },
-            {
-                "url": "electrumx-vtc.cryptoverted.com:55004",
-                "protocol": "WSS",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ]
             },
             {
                 "url": "electrumx.javerity.com:5885",

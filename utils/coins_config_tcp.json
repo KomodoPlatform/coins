@@ -25732,6 +25732,10 @@
                 "ws_url": "wss://moonriver-rpc.publicnode.com"
             },
             {
+                "url": "https://moonriver.drpc.org",
+                "ws_url": "wss://moonriver.drpc.org"
+            },
+            {
                 "url": "https://rpc.api.moonriver.moonbeam.network",
                 "ws_url": "wss://wss.api.moonriver.moonbeam.network"
             }
@@ -27811,15 +27815,6 @@
             "homepage": "https://pepecoin.org"
         },
         "electrum": [
-            {
-                "url": "electrum.pepe.tips:50002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "squidicuz"
-                    }
-                ]
-            },
             {
                 "url": "electrum.pepeblocks.com:50002",
                 "protocol": "SSL",
@@ -37922,15 +37917,6 @@
         },
         "electrum": [
             {
-                "url": "electrumx-vtc.cryptoverted.com:55002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ]
-            },
-            {
                 "url": "electrumx.javerity.com:5886",
                 "protocol": "SSL",
                 "contact": [
@@ -37988,15 +37974,6 @@
             "homepage": "https://vertcoin.org"
         },
         "electrum": [
-            {
-                "url": "electrumx-vtc.cryptoverted.com:55002",
-                "protocol": "SSL",
-                "contact": [
-                    {
-                        "discord": "alviemahmud"
-                    }
-                ]
-            },
             {
                 "url": "electrumx.javerity.com:5886",
                 "protocol": "SSL",
