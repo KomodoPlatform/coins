@@ -5477,7 +5477,8 @@
       },
       "https://rpc.cosmos.directory/osmosis": {
         "1763521637": "online",
-        "1764676026": "offline"
+        "1764676026": "offline",
+        "1764679737": "online"
       },
       "https://rpc.osmosis.zone/": {
         "1755770395": "online"
