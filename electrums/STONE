@@ -1,0 +1,22 @@
+[
+  {
+    "url": "electrum.bloodstonewallet.mytunnel.org:50001",
+    "contact": [
+      {
+        "email": "support@bloodstonewallet.mytunnel.org",
+        "url": "https://bloodstonewallet.mytunnel.org/support/"
+      }
+    ]
+  },
+  {
+    "url": "electrum.bloodstonewallet.mytunnel.org:50002",
+    "protocol": "SSL",
+    "contact": [
+      {
+        "email": "support@bloodstonewallet.mytunnel.org",
+        "url": "https://bloodstonewallet.mytunnel.org/support/"
+      }
+    ],
+    "ws_url": "electrum.bloodstonewallet.mytunnel.org:50003"
+  }
+]
