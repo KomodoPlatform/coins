@@ -2034,6 +2034,7 @@
     "pubtype": 25,
     "p2shtype": 85,
     "wiftype": 153,
+    "derivation_path": "m/44'/0'",
     "txversion": 2,
     "txfee": 0,
     "estimate_fee_mode": "ECONOMICAL",
