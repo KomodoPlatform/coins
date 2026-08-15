@@ -1,0 +1,26 @@
+[
+  {
+    "url": "electrum-bloz.pinco-labs.com:50002",
+    "protocol": "SSL",
+    "contact": [
+      {
+        "email": "contact@pinco-labs.com"
+      },
+      {
+        "discord": "pinco0966"
+      }
+    ]
+  },
+  {
+    "url": "electrum2-bloz.pinco-labs.com:50002",
+    "protocol": "SSL",
+    "contact": [
+      {
+        "email": "contact@pinco-labs.com"
+      },
+      {
+        "discord": "pinco0966"
+      }
+    ]
+  }
+]
