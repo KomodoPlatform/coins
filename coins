@@ -4249,7 +4249,7 @@
     "coin": "DIME",
     "name": "dimecoin",
     "fname": "Dimecoin",
-    "rpcport": 11931,
+    "rpcport": 8332,
     "pubtype": 15,
     "p2shtype": 9,
     "wiftype": 143,
