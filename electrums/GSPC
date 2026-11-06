@@ -1,0 +1,19 @@
+[
+  {
+    "url": "electrum.gspcoin.us:50001",
+    "contact": [
+      {
+        "github": "gamgsp"
+      }
+    ]
+  },
+  {
+    "url": "electrum.gspcoin.us:50002",
+    "protocol": "SSL",
+    "contact": [
+      {
+        "github": "gamgsp"
+      }
+    ]
+  }
+]
